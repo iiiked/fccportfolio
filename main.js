@@ -1,4 +1,5 @@
-document.getElementById('expandLink').addEventListener('click', () => {
+document.getElementById('expandLink').addEventListener('click', (e) => {
+  e.preventDefault();
   const expandableSection = document.getElementById('moreInfo');
   if ([...expandableSection.classList].includes('expanded-section')) {
     expandableSection.classList.remove('expanded-section');
